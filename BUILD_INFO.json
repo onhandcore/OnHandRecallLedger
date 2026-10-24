@@ -1,0 +1,21 @@
+{
+  "product": "OnHandRecallLedger",
+  "product_version": "1.0.0",
+  "artifact_id": "OnHandRecallLedger-1.0.0-BILINGUAL-C01-20261024-R02-Windows-CPython312",
+  "runtime": {
+    "implementation": "cpython",
+    "python_version": "3.12.14",
+    "architecture": "AMD64",
+    "cache_tag": "cpython-312",
+    "magic": "cb0d0d0a",
+    "optimize": 0,
+    "OS": "Windows"
+  },
+  "core_module_count": 17,
+  "core_source_bytes_unchanged": true,
+  "license": "LicenseRef-OnHand-Family-Closed-Source",
+  "third_party_runtime_packages_bundled": [],
+  "public_operation_count": 18,
+  "wiring_review": "REQUIRED_FOR_THIS_DISTRIBUTION",
+  "public_download": null
+}

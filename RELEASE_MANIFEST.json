@@ -1,0 +1,166 @@
+{
+  "product": "OnHandRecallLedger",
+  "product_version": "1.0.0",
+  "artifact_id": "OnHandRecallLedger-1.0.0-BILINGUAL-C01-20261024-R02-Windows-CPython312",
+  "license": "LicenseRef-OnHand-Family-Closed-Source",
+  "runtime": {
+    "implementation": "cpython",
+    "python_version": "3.12.14",
+    "architecture": "AMD64",
+    "cache_tag": "cpython-312",
+    "magic": "cb0d0d0a",
+    "optimize": 0,
+    "OS": "Windows"
+  },
+  "files": {
+    "BUILD_INFO.json": {
+      "size": 648,
+      "sha256": "4a03c899c6343c45e10df83ecaabbf5ff8ed09165b247117cc5766989a500011"
+    },
+    "install.py": {
+      "size": 2966,
+      "sha256": "9ddea454459276cc0e540629eab1edff2c77be151ed6636c41ad35f7bbaededf"
+    },
+    "INSTALLATION.md": {
+      "size": 4802,
+      "sha256": "9f97792b60170eb8fec67e9114200b7c94f18aceb347679e65731a01e4081996"
+    },
+    "INSTALLATION.zh-CN.md": {
+      "size": 3943,
+      "sha256": "966ee1ff56026a3d4f0e5ef831d7e1571287068bd8c5cf2faf7c7283f730a82f"
+    },
+    "invoke.py": {
+      "size": 319,
+      "sha256": "be9804a02b00ea79cb81518184c46559b884223b7fa5754d22bfaf04e8f610d6"
+    },
+    "lib/onhand_recallledger/__init__.pyc": {
+      "size": 234,
+      "sha256": "39cf3fb05f93233ff8ee26a74bc5ae4ca6f00d7c17bbd5c4f4e654034bd515de"
+    },
+    "lib/onhand_recallledger/__main__.pyc": {
+      "size": 255,
+      "sha256": "c15d370622a8f19b3d69fc4ca80766d21bb4e724daba8e4b861d3779f0a186a5"
+    },
+    "lib/onhand_recallledger/common/__init__.pyc": {
+      "size": 229,
+      "sha256": "33e0925a6c70d135c5477d18e9e3409138713abca6be0102c8b955ee78df2ea8"
+    },
+    "lib/onhand_recallledger/common/foundation.pyc": {
+      "size": 31084,
+      "sha256": "627d39fc041c5142ffb14e33cb4b74c92527107c39eeb5c00eb1b7e61e10d5a9"
+    },
+    "lib/onhand_recallledger/common/os_exclusion.pyc": {
+      "size": 6120,
+      "sha256": "2e32fa9a34ad4aad5fe6c0d88071598c31f40953bfb0da06cebae18aea74c481"
+    },
+    "lib/onhand_recallledger/contracts/__init__.pyc": {
+      "size": 8726,
+      "sha256": "0cd5f65ab3ace712f842828839c3ccf03d1e5f824ee5d04c2bcc980e95096548"
+    },
+    "lib/onhand_recallledger/contracts/material.pyc": {
+      "size": 14517,
+      "sha256": "4ad7f99e77c41224c7c3f8581209935f17d0df00dad738ed6d1f08be701aef67"
+    },
+    "lib/onhand_recallledger/delete_recovery/__init__.pyc": {
+      "size": 312,
+      "sha256": "e6bb0e4566e139bfe148eb11c927eb1a05e3189a698ee3d9566028c3b546a357"
+    },
+    "lib/onhand_recallledger/delete_recovery/core.pyc": {
+      "size": 21759,
+      "sha256": "091552bc399647b94b81fa572d5199bba410af06d3aa197c509ac3e4980bc8e8"
+    },
+    "lib/onhand_recallledger/event_lifecycle/__init__.pyc": {
+      "size": 325,
+      "sha256": "e85ed37d4010d19a982833739aae365aad5421f7bb2a3282403640e3d73ab6e9"
+    },
+    "lib/onhand_recallledger/event_lifecycle/core.pyc": {
+      "size": 39465,
+      "sha256": "9a63d134f40fd7493253fa47fd30e1a9d34f8b7a203e2bb7031736f7dc3b56da"
+    },
+    "lib/onhand_recallledger/host/__init__.pyc": {
+      "size": 2294,
+      "sha256": "bb414b8e7cc4c2785452eece3facfbcd0e2463bbd49e633ed9916faadf0dd9d9"
+    },
+    "lib/onhand_recallledger/knowledge/__init__.pyc": {
+      "size": 285,
+      "sha256": "26e25904e9bd82982376743933452cee281365e6a445b36b526d04ccefc98237"
+    },
+    "lib/onhand_recallledger/knowledge/core.pyc": {
+      "size": 58287,
+      "sha256": "a4ce0fe46e7ee6355dce6995f23a59436846c37ac31887f261e48df186269ef4"
+    },
+    "lib/onhand_recallledger/public/__init__.pyc": {
+      "size": 8387,
+      "sha256": "49d77cdad194b9c4e39d18db5fafa6f6a633c736efa3373016bb1129faebdc4a"
+    },
+    "lib/onhand_recallledger/recall/__init__.pyc": {
+      "size": 284,
+      "sha256": "574955e159d26824bd03882ba04ecc30068c75f2fa05b33f795a345099d4c2f5"
+    },
+    "lib/onhand_recallledger/recall/core.pyc": {
+      "size": 57999,
+      "sha256": "d462cebb12a7bcf1dcc82046f5686b3b26b5507c5968053f974a9c7fb5a757b1"
+    },
+    "LICENSE": {
+      "size": 4047,
+      "sha256": "ec73c0ec1831ecdb6d12b73f1054591d732b7a532f398f7f28e7dd475d129909"
+    },
+    "manage.py": {
+      "size": 2095,
+      "sha256": "93f486be7e1a7128b4b95d23637050c47902facbf2ee6942833e50ff70c02914"
+    },
+    "README.md": {
+      "size": 8387,
+      "sha256": "eeebf41f287b613c419b4da09efe770fd5676550bd09582ec3fd648b3dded850"
+    },
+    "README.zh-CN.md": {
+      "size": 7232,
+      "sha256": "35a0759a8275a63ac38be0503d30ea03e28dff0af971f6d4c81f3362b4e63142"
+    },
+    "references/public-contract.json": {
+      "size": 6519,
+      "sha256": "a699bb3d6c5158612bce1048fca127825a7e15c20444c51497a84409729e996b"
+    },
+    "references/public-material-request.md": {
+      "size": 10535,
+      "sha256": "7ceada92d3d5755109eb651c9c3952a1b90dc6455f6a9c1fe0186011a398ee41"
+    },
+    "RELEASE_NOTES.md": {
+      "size": 1811,
+      "sha256": "c7f7c3de0392b6d687b1290c4113bf1ade210e2de794c917748f14b2ce74cf0e"
+    },
+    "RELEASE_NOTES.zh-CN.md": {
+      "size": 1432,
+      "sha256": "b9028c3e4825417204259d32b9eebb6be11f8ddadba3e44d67c059d4234edc0b"
+    },
+    "resident_entry.py": {
+      "size": 2645,
+      "sha256": "7156d3655aa248d8d0b42f083ffd4c1b9ade7f7c64f93cdbfe18200f02b3f0b4"
+    },
+    "runtime_support.py": {
+      "size": 2426,
+      "sha256": "0a0d4ba3407ea650e5c0550a400d0ac1b31470e5f4eff4c195836ff774fb08bc"
+    },
+    "SKILL.md": {
+      "size": 15063,
+      "sha256": "6e497b9d97b0a92820a26e8c820b9a1a5f52f27e7f9c8c6c211b6b5593febeab"
+    },
+    "smoke.py": {
+      "size": 1638,
+      "sha256": "3aa4369d50e5b77cc8e68655185ff05e4c1de5b09e30ebf1a3dfbee074417ee8"
+    },
+    "state_target.py": {
+      "size": 459,
+      "sha256": "67207b5393e9d641d12090a1cf6ae4efeec20023269fb65c0b01b70249e7b539"
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "size": 2314,
+      "sha256": "400b5b3712d4e4a7908d0c697e39ad0b1eceb5b7b9082c10c0c557ac62e625f1"
+    },
+    "wsl_entry.py": {
+      "size": 1042,
+      "sha256": "89a5f5aa8600dee71b00e6f21765d0ac53cf49ee6010b3339bc2c4f7a036d0c4"
+    }
+  },
+  "self_hash": "External SHA256SUMS.txt covers the ZIP including this manifest"
+}

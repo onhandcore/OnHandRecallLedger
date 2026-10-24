@@ -1,0 +1,270 @@
+{
+  "schema": "ONHAND_RECALLLEDGER_PUBLIC_OPERATION_V1",
+  "product_version": "1.0.0",
+  "review_status": "DISTRIBUTION_CANDIDATE_REQUIRES_OWN_WIRING_REVIEW",
+  "operation_count": 18,
+  "operations": [
+    {
+      "operation_name": "recall.retrieve",
+      "request_version": "1.0",
+      "response_version": "1.0",
+      "rejected_version": "1.1",
+      "required_payload": [
+        "generalized_query",
+        "scopes",
+        "top_k"
+      ]
+    },
+    {
+      "operation_name": "recall.admit",
+      "request_version": "1.0",
+      "response_version": "1.0",
+      "rejected_version": "1.1",
+      "required_payload": [
+        "task_run_id",
+        "semantic_revision",
+        "source_id",
+        "items"
+      ]
+    },
+    {
+      "operation_name": "recall.publish",
+      "request_version": "1.0",
+      "response_version": "1.0",
+      "rejected_version": "1.1",
+      "required_payload": [
+        "publication_operation_id",
+        "working_item_id",
+        "task_run_id",
+        "semantic_revision",
+        "content_digest"
+      ]
+    },
+    {
+      "operation_name": "recall.lifecycle.mutate",
+      "request_version": "1.0",
+      "response_version": "1.0",
+      "rejected_version": "1.1",
+      "required_payload": [
+        "capsule_id",
+        "action",
+        "expected_record_revision"
+      ]
+    },
+    {
+      "operation_name": "recall.cleanup.preview",
+      "request_version": "1.0",
+      "response_version": "1.0",
+      "rejected_version": "1.1",
+      "required_payload": [
+        "selection_criteria",
+        "top_k"
+      ]
+    },
+    {
+      "operation_name": "recall.settings.read",
+      "request_version": "1.0",
+      "response_version": "1.0",
+      "rejected_version": "1.1",
+      "required_payload": []
+    },
+    {
+      "operation_name": "recall.settings.update",
+      "request_version": "1.0",
+      "response_version": "1.0",
+      "rejected_version": "1.1",
+      "required_payload": [
+        "recall_enabled",
+        "expected_settings_revision"
+      ]
+    },
+    {
+      "operation_name": "knowledge.candidate.submit",
+      "request_version": "1.0",
+      "response_version": "1.0",
+      "rejected_version": "1.1",
+      "required_payload": [
+        "knowledge_body",
+        "claim_scope",
+        "classification_path"
+      ]
+    },
+    {
+      "operation_name": "knowledge.search",
+      "request_version": "1.0",
+      "response_version": "1.0",
+      "rejected_version": "1.1",
+      "required_payload": [
+        "query",
+        "top_k"
+      ]
+    },
+    {
+      "operation_name": "knowledge.read",
+      "request_version": "1.0",
+      "response_version": "1.0",
+      "rejected_version": "1.1",
+      "required_payload": [
+        "knowledge_id"
+      ]
+    },
+    {
+      "operation_name": "knowledge.validation.open",
+      "request_version": "1.0",
+      "response_version": "1.0",
+      "rejected_version": "1.1",
+      "required_payload": [
+        "knowledge_id",
+        "content_revision",
+        "knowledge_body_digest",
+        "validation_use_id",
+        "validation_epoch",
+        "operation_id"
+      ]
+    },
+    {
+      "operation_name": "knowledge.validation.settle",
+      "request_version": "1.0",
+      "response_version": "1.0",
+      "rejected_version": "1.1",
+      "required_payload": [
+        "ticket_id",
+        "knowledge_id",
+        "content_revision",
+        "knowledge_body_digest",
+        "validation_use_id",
+        "validation_epoch",
+        "outcome",
+        "evidence_refs"
+      ]
+    },
+    {
+      "operation_name": "knowledge.conflict.apply",
+      "request_version": "1.0",
+      "response_version": "1.0",
+      "rejected_version": "1.1",
+      "required_payload": [
+        "affected",
+        "decision"
+      ]
+    },
+    {
+      "operation_name": "knowledge.revision.apply",
+      "request_version": "1.0",
+      "response_version": "1.0",
+      "rejected_version": "1.1",
+      "required_payload": [
+        "action",
+        "targets"
+      ]
+    },
+    {
+      "operation_name": "event.ingest",
+      "request_version": "1.0",
+      "response_version": "1.0",
+      "rejected_version": "1.1",
+      "required_payload": [
+        "event_id",
+        "event_kind",
+        "task_run_id",
+        "semantic_revision",
+        "scope_id",
+        "sequence",
+        "payload_digest",
+        "contract_version",
+        "payload"
+      ]
+    },
+    {
+      "operation_name": "run.lifecycle.apply",
+      "request_version": "1.0",
+      "response_version": "1.0",
+      "rejected_version": "1.1",
+      "required_payload": [
+        "action",
+        "task_run_id",
+        "lifecycle_owner_ref",
+        "lifecycle_owner_revision"
+      ]
+    },
+    {
+      "operation_name": "erasure.execute",
+      "request_version": "1.0",
+      "response_version": "1.0",
+      "rejected_version": "1.1",
+      "required_payload": [
+        "delete_operation_id",
+        "delete_scope",
+        "erasure_authorization"
+      ]
+    },
+    {
+      "operation_name": "host.material.request",
+      "request_version": "1.1",
+      "response_version": "1.1",
+      "rejected_version": "1.0",
+      "actions": [
+        "EVALUATE",
+        "SETTLE"
+      ],
+      "nested_material_version": "1.0",
+      "full_contract": "public-material-request.md"
+    }
+  ],
+  "material": {
+    "exact_envelope_fields": [
+      "contract_version",
+      "operation_name",
+      "operation_id",
+      "owner_namespace",
+      "request_digest",
+      "payload"
+    ],
+    "evaluate_exact_fields": [
+      "action",
+      "trigger",
+      "task_run_id",
+      "semantic_revision",
+      "target_operation",
+      "request_key",
+      "source_id",
+      "source_revision",
+      "host_facts",
+      "evidence_refs"
+    ],
+    "settle_exact_fields": [
+      "action",
+      "original_evaluation",
+      "request_id",
+      "evaluation_digest",
+      "material_operation"
+    ],
+    "trigger_facts": {
+      "A": [
+        "semantic_object_required",
+        "legal_ingress_or_producer_absent"
+      ],
+      "B": [
+        "legal_light_task_bypass",
+        "meaningful_completion_evidence",
+        "within_existing_scope",
+        "materially_reusable",
+        "suitable_legal_material_absent"
+      ]
+    },
+    "trigger_evidence_keys": {
+      "A": [
+        "requirement",
+        "material_availability"
+      ],
+      "B": [
+        "admission",
+        "completion",
+        "scope",
+        "reusable_value",
+        "material_availability"
+      ]
+    },
+    "full_contract": "public-material-request.md"
+  }
+}
